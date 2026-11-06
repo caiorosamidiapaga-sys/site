@@ -987,6 +987,34 @@
     .hero-stats { gap: 16px; }
     .stat-num { font-size: 1.4rem; }
   }
+
+  .badge-novo { background: var(--lima); color: var(--preto); font-size: 0.65rem; font-weight: 800; padding: 2px 8px; border-radius: 100px; margin-left: 4px; letter-spacing: 0.04em; }
+  .sobre-foto-wrap { position: relative; max-width: 420px; width: 100%; margin: 0 auto; }
+  .sobre-foto { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center top; border-radius: 24px; border: 1px solid var(--borda); display: block; background: radial-gradient(ellipse 70% 55% at 50% 38%, rgba(255,105,98,0.38) 0%, transparent 70%), linear-gradient(165deg, #1d4a57 0%, #163842 55%, #0f2830 100%); }
+  .foto-badge { position: absolute; left: -16px; bottom: 28px; background: var(--preto); border: 1px solid rgba(197,215,89,0.5); color: var(--offwhite); padding: 12px 18px; border-radius: 14px; font-size: 0.82rem; font-weight: 600; box-shadow: 0 12px 40px rgba(0,0,0,0.5); line-height: 1.3; }
+  .foto-badge strong { color: var(--lima); display: block; font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; }
+  .sobre-cred { margin-top: 28px; padding: 16px 20px; border-left: 3px solid var(--lima); background: rgba(197,215,89,0.06); border-radius: 0 12px 12px 0; font-size: 0.95rem; color: var(--offwhite); }
+  .sobre-cred span { display: block; font-size: 0.75rem; color: var(--lima); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 2px; }
+  .sobre-col-foto { display: flex; flex-direction: column; gap: 28px; }
+  .cta-avatar-wrap { display: inline-flex; align-items: center; gap: 14px; margin-bottom: 28px; background: rgba(242,235,228,0.05); border: 1px solid var(--borda); padding: 8px 20px 8px 8px; border-radius: 100px; }
+  .cta-avatar { position: relative; width: 56px; height: 56px; }
+  .cta-avatar img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: center 10%; border: 2px solid var(--coral); display: block; background: linear-gradient(165deg,#1d4a57,#163842); }
+  .cta-avatar::after { content: ''; position: absolute; right: 0; bottom: 0; width: 14px; height: 14px; background: #3DDC84; border: 2px solid var(--preto); border-radius: 50%; animation: pulse 2s infinite; }
+  .cta-avatar-txt { text-align: left; font-size: 0.85rem; line-height: 1.3; }
+  .cta-avatar-txt strong { display: block; font-family: 'Bricolage Grotesque', sans-serif; font-size: 0.95rem; }
+  .cta-avatar-txt span { color: #3DDC84; font-size: 0.78rem; font-weight: 600; }
+  .sobre-grid { align-items: start; }
+  .sobre-destaques { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .hero-badge { border-radius: 18px; text-align: left; }
+  @media (max-width: 900px) {
+    .foto-badge { left: 8px; }
+    .sobre-foto-wrap { max-width: 340px; }
+    .sobre-destaques { grid-template-columns: 1fr; }
+    #hero { flex-direction: column; align-items: stretch; justify-content: center; }
+    .hero-content { width: 100%; }
+    .hero-sub { max-width: 100%; }
+    .btn-primary { text-align: left; }
+  }
 </style>
 </head>
 <body>
@@ -1005,14 +1033,14 @@
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
   <div class="hero-content">
-    <div class="hero-badge">Estratégia · Meta Ads · Google Ads · LinkedIn Ads · TikTok Ads</div>
+    <div class="hero-badge">Estratégia · Meta Ads · Google Ads · LinkedIn Ads · TikTok Ads · ChatGPT Ads <span class="badge-novo">NOVO · IA</span></div>
     <h1 class="hero-h1">
       Mídia paga com<br>
       <em>estratégia</em>, análise<br>
-      e <span class="underline-lima">foco no resultado</span>.
+      e <span class="underline-lima">resultado</span>.
     </h1>
     <p class="hero-sub">
-      Campanhas que convertem no Meta, Google, LinkedIn e TikTok Ads.<br>Estratégia antes de qualquer clique. Resultado antes de qualquer relatório.
+      Campanhas que convertem no Meta, Google, LinkedIn, TikTok e ChatGPT Ads.<br>Estratégia antes de qualquer clique. Resultado antes de qualquer relatório.
     </p>
     <div class="hero-ctas">
       <a href="https://api.whatsapp.com/send/?phone=5544991228420" target="_blank" class="btn-primary">
@@ -1062,6 +1090,12 @@
     <span class="logo-item">·</span>
     <span class="logo-item">Lab Fantasma</span>
     <span class="logo-item">·</span>
+    <span class="logo-item">Mackenzie</span>
+    <span class="logo-item">·</span>
+    <span class="logo-item">Sepac</span>
+    <span class="logo-item">·</span>
+    <span class="logo-item">Piet</span>
+    <span class="logo-item">·</span>
     <span class="logo-item">Farmácias Nissei</span>
     <span class="logo-item">·</span>
     <span class="logo-item">Ding! Incorporadora</span>
@@ -1082,6 +1116,12 @@
     <span class="logo-item">·</span>
     <span class="logo-item">Lab Fantasma</span>
     <span class="logo-item">·</span>
+    <span class="logo-item">Mackenzie</span>
+    <span class="logo-item">·</span>
+    <span class="logo-item">Sepac</span>
+    <span class="logo-item">·</span>
+    <span class="logo-item">Piet</span>
+    <span class="logo-item">·</span>
   </div>
 </section>
 
@@ -1089,12 +1129,19 @@
 <section id="sobre">
   <div class="container">
     <div class="sobre-grid reveal">
+      <div class="sobre-col-foto">
+        <div class="sobre-foto-wrap">
+          <img class="sobre-foto" src="caio-recorte.webp" alt="Caio Rosa, estrategista de mídia paga" loading="lazy">
+          <div class="foto-badge"><strong>Vencedor</strong>🏆 Top Mkt ADVB-PR</div>
+        </div>
+      </div>
       <div class="sobre-text">
         <span class="section-tag">Sobre mim</span>
         <h2 class="section-title">Estratégia antes<br>de qualquer clique.</h2>
         <p>Formado em Jornalismo, com especialização em Marketing Digital e Gestão do Comércio Eletrônico. <strong>10 anos de experiência comprovada em mídia paga</strong> — do planejamento ao relatório, com visão de negócio em cada etapa.</p>
         <p>Trabalhei com marcas que vão de startups de tecnologia a incorporadoras, de redes de farmácias a órgãos públicos. O que todas têm em comum: precisavam de resultado, não de presença.</p>
         <p><strong>Mais do que gerir campanhas, atuo como parceiro estratégico.</strong> Entendo o negócio, analiso os dados com profundidade e construo junto com o cliente uma estratégia de mídia que evolui continuamente — com transparência e foco em resultados sustentáveis.</p>
+        <div class="sobre-cred"><span>Credencial</span>Membro da Gestão do Grupo de Mídia do Paraná (2027/2028)</div>
       </div>
       <div class="sobre-destaques">
         <div class="destaque-item">
@@ -1102,8 +1149,8 @@
           <div class="destaque-desc">Vencedor do Prêmio Top Mkt ADVB-PR 2023 com Amigo Supermercados. Indicado em 2024 nas categorias Varejo e Serviços.</div>
         </div>
         <div class="destaque-item">
-          <div class="destaque-num">Meta + Google</div>
-          <div class="destaque-desc">Especialista em Meta Ads, Google Ads, LinkedIn Ads e TikTok Ads. Integração de estratégias cross-channel para máxima eficiência de verba.</div>
+          <div class="destaque-num" style="font-size:1.45rem">Meta + Google + ChatGPT Ads</div>
+          <div class="destaque-desc">Especialista em Meta Ads, Google Ads, LinkedIn Ads, TikTok Ads e ChatGPT Ads, a nova fronteira da mídia em IA. Integração cross-channel para máxima eficiência de verba.</div>
         </div>
         <div class="destaque-item">
           <div class="destaque-num">Visão estratégica</div>
@@ -1211,7 +1258,7 @@
       <div class="servico-item">
         <div class="servico-icon">📡</div>
         <div class="servico-titulo">Gestão de Mídia Paga</div>
-        <div class="servico-desc">Operação completa de campanhas no Meta Ads, Google Ads, LinkedIn Ads e TikTok Ads — do setup à otimização contínua com foco em resultado.</div>
+        <div class="servico-desc">Operação completa de campanhas no Meta Ads, Google Ads, LinkedIn Ads, TikTok Ads e ChatGPT Ads — do setup à otimização contínua com foco em resultado.</div>
         <ul class="servico-lista">
           <li>Planejamento de mídia e distribuição de verba</li>
           <li>Criação e gestão de campanhas</li>
@@ -1389,6 +1436,11 @@
 <section id="cta-final">
   <div class="cta-bg"></div>
   <div class="cta-content reveal">
+    <div class="cta-avatar-wrap">
+      <div class="cta-avatar"><img src="caio-recorte.webp" alt="Caio Rosa"></div>
+      <div class="cta-avatar-txt"><strong>Caio Rosa</strong><span>Disponível para novos projetos</span></div>
+    </div>
+    <br>
     <span class="section-tag">Próximo passo</span>
     <h2 class="section-title">Vamos conversar sobre<br>o seu projeto?</h2>
     <p class="section-sub">Se você busca um profissional experiente para planejar, gerir e otimizar suas campanhas com proximidade e visão estratégica, estou disponível para uma conversa inicial sem compromisso.</p>
